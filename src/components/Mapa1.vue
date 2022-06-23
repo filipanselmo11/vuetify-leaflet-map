@@ -10,6 +10,16 @@
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 
+// var CustomIcon = L.Icon.extend({
+//   options: {
+//     iconSize: [38, 95],
+//     iconAnchor: [50, 64],
+//     popupAnchor: [-3, -76],
+//   },
+// });
+
+// var icone = CustomIcon({iconUrl: '/assets/location-icon.png'});
+
 var icone = L.icon({
   // iconUrl: 'map-marker-radius',
   iconUrl: '/assets/location-icon.png',
@@ -67,7 +77,6 @@ export default {
   data() {
     return {
       map: undefined,
-      icon: undefined,
       layerControl: undefined,
     };
   },
