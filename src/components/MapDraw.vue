@@ -65,8 +65,8 @@ export default {
   methods: {
     initMap() {
       this.map = L.map("map", { drawControl: true }).setView(
-        [-0.13043324879318963, -67.08780940856025],
-        13
+        [-8.359639010938677, -55.40120007970321],
+        5
       );
       L.tileLayer("http://{s}.tile.osm.org/{z}/{x}/{y}.png", {
         attribution:
