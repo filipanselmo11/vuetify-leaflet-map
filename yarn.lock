@@ -2572,6 +2572,11 @@
     "domhandler" "^4.2.0"
     "entities" "^2.0.0"
 
+"dom-to-image-more@^2.8.0":
+  "integrity" "sha512-gMG28V47WGj5/xvrsbSPJAWSaV7CBh4teLErn1iGD1sa29HsFsHxvnoLj8VxVvfqnjPgsiUGs2IV2VAxLJGb+A=="
+  "resolved" "https://registry.npmjs.org/dom-to-image-more/-/dom-to-image-more-2.10.1.tgz"
+  "version" "2.10.1"
+
 "domelementtype@^2.0.1", "domelementtype@^2.2.0":
   "integrity" "sha512-OLETBj6w0OsagBwdXnPdN0cnMfF9opN69co+7ZrbfPGrdpPVNBUj02spi6B1N7wChLQiPn4CSH/zJvXw56gmHw=="
   "resolved" "https://registry.npmjs.org/domelementtype/-/domelementtype-2.3.0.tgz"
@@ -2864,6 +2869,11 @@
   dependencies:
     "loader-utils" "^2.0.0"
     "schema-utils" "^3.0.0"
+
+"file-saver@^2.0.2":
+  "integrity" "sha512-P9bmyZ3h/PRG+Nzga+rbdI4OEpNDzAVyy74uVO9ATgzLK6VtAsYybF/+TOCvrc0MO793d6+42lLyZTw7/ArVzA=="
+  "resolved" "https://registry.npmjs.org/file-saver/-/file-saver-2.0.5.tgz"
+  "version" "2.0.5"
 
 "fill-range@^7.0.1":
   "integrity" "sha512-qOo9F+dMUmC2Lcb4BbVvnKJxTPjCm+RRpe4gDuGrzkL7mEVl/djYSu2OdQ2Pa302N4oqkSg9ir6jaLWJ2USVpQ=="
@@ -3505,7 +3515,30 @@
     "picocolors" "^1.0.0"
     "shell-quote" "^1.6.1"
 
-"leaflet@^1.6.0":
+"leaflet-draw@^1.0.4":
+  "integrity" "sha512-rsQ6saQO5ST5Aj6XRFylr5zvarWgzWnrg46zQ1MEOEIHsppdC/8hnN8qMoFvACsPvTioAuysya/TVtog15tyAQ=="
+  "resolved" "https://registry.npmjs.org/leaflet-draw/-/leaflet-draw-1.0.4.tgz"
+  "version" "1.0.4"
+
+"leaflet-ruler@^1.0.0":
+  "integrity" "sha512-5Ti99czL+hhcd5rMmT5JBkDvzErPUM+ogJbP6NDzJEMK5vCGqS9/1BrMpVeCcCaxViSWLPf9qcXRGcGO85UCZA=="
+  "resolved" "https://registry.npmjs.org/leaflet-ruler/-/leaflet-ruler-1.0.0.tgz"
+  "version" "1.0.0"
+
+"leaflet-simple-map-screenshoter@^0.4.5":
+  "integrity" "sha512-bvd++mQstpgb7F7c2v5jCLlUitQ6CcYLZ56do7PVyyVpGvnlhIEk5S6dLXqpe3itSr2D/re5yUAOf8zBt95ViQ=="
+  "resolved" "https://registry.npmjs.org/leaflet-simple-map-screenshoter/-/leaflet-simple-map-screenshoter-0.4.5.tgz"
+  "version" "0.4.5"
+  dependencies:
+    "dom-to-image-more" "^2.8.0"
+    "file-saver" "^2.0.2"
+
+"leaflet-velocity@^2.1.2":
+  "integrity" "sha512-KlMwjdQ3C32O96LV/JVDhzEGUum/P050KGTvKj8fE0NM0+Jb9cwguVrdwW999TZ/lbiGJHdkqOQPlWgKVTWBIw=="
+  "resolved" "https://registry.npmjs.org/leaflet-velocity/-/leaflet-velocity-2.1.2.tgz"
+  "version" "2.1.2"
+
+"leaflet@^1.7.1":
   "integrity" "sha512-gwhMjFCQiYs3x/Sf+d49f10ERXaEFCPr+nVTryhAW8DWbMGqJqt9G4XuIaHmFW08zYvhgdzqXGr8AlW8v8dQkA=="
   "resolved" "https://registry.npmjs.org/leaflet/-/leaflet-1.8.0.tgz"
   "version" "1.8.0"
