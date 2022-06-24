@@ -39,7 +39,7 @@ export default {
         }
       );
       this.tileLayer.addTo(this.map);
-      this.sidebar = L.control.sidebar('sidebar').addTo(this.map);
+      // this.sidebar = L.control.sidebar('sidebar').addTo(this.map);
     },
   },
 };
