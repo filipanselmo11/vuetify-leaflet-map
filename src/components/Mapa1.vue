@@ -7,8 +7,17 @@
 </template>
 
 <script>
-import L from "leaflet";
+import "leaflet";
 import "leaflet/dist/leaflet.css";
+
+const L = window["L"];
+
+delete L.Icon.Default.prototype._getIconUrl;
+L.Icon.Default.mergeOptions({
+  iconRetinaUrl: require("leaflet/dist/images/marker-icon-2x.png"),
+  iconUrl: require("leaflet/dist/images/marker-icon.png"),
+  shadowUrl: require("leaflet/dist/images/marker-shadow.png"),
+});
 
 // var CustomIcon = L.Icon.extend({
 //   options: {
@@ -20,18 +29,18 @@ import "leaflet/dist/leaflet.css";
 
 // var icone = CustomIcon({iconUrl: '/assets/location-icon.png'});
 
-var icone = L.icon({
-  // iconUrl: 'map-marker-radius',
-  iconUrl: '/assets/location-icon.png',
-  iconSize: [38, 93],
-  iconAnchor: [22, 94],
-});
+// var icone = L.icon({
+//   // iconUrl: 'map-marker-radius',
+//   iconUrl: "/assets/location-icon.png",
+//   iconSize: [38, 93],
+//   iconAnchor: [22, 94],
+// });
 
-var manaus = L.marker([-3.11866, -60.0212], { icon: icone }).bindPopup("Manaus"),
-  belem = L.marker([-6.74261, -35.5166], { icon: icone }).bindPopup("Belem"),
-  brasilia = L.marker([-15.7795, -47.9297], { icon: icone }).bindPopup("Brasilia"),
-  natal = L.marker([-5.79357, -35.1986], { icon: icone }).bindPopup("Natal"),
-  sgc = L.marker([-0.13043324879318963, -67.08780940856025], { icon: icone }).bindPopup(
+var manaus = L.marker([-3.11866, -60.0212]).bindPopup("Manaus"),
+  belem = L.marker([-6.74261, -35.5166]).bindPopup("Belem"),
+  brasilia = L.marker([-15.7795, -47.9297]).bindPopup("Brasilia"),
+  natal = L.marker([-5.79357, -35.1986]).bindPopup("Natal"),
+  sgc = L.marker([-0.13043324879318963, -67.08780940856025]).bindPopup(
     "São Gabriel da Cachoeira"
   );
 
@@ -42,12 +51,8 @@ var osm = L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
   attribution: "© OpenStreetMap",
 });
 
-var praiaPipa = L.marker([-6.226510091221283, -35.04496734216885], {
-    icon: icone,
-  }).bindPopup("Praia de Pipa"),
-  teatroAmazonas = L.marker([-3.1300424026467826, -60.02342493098717], {
-    icon: icone,
-  }).bindPopup("Teatro Amazonas");
+var praiaPipa = L.marker([-6.226510091221283, -35.04496734216885]).bindPopup("Praia de Pipa"),
+  teatroAmazonas = L.marker([-3.1300424026467826, -60.02342493098717]).bindPopup("Teatro Amazonas");
 
 var locais = L.layerGroup([praiaPipa, teatroAmazonas]);
 
